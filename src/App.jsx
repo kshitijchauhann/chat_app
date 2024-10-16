@@ -6,6 +6,24 @@ import {
 } from '@chakra-ui/react';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAnGo_MlKz2UYTkYkZhPx6mbIbP_qZK7x0",
+  authDomain: "ilvu-4dfdc.firebaseapp.com",
+  projectId: "ilvu-4dfdc",
+  storageBucket: "ilvu-4dfdc.appspot.com",
+  messagingSenderId: "839885124914",
+  appId: "1:839885124914:web:c4aef23e0b4138aa07d32b"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+
 const IlvuLogo = () => {
   const logoSize = useBreakpointValue({ base: "320px", md: "400px" });
   
