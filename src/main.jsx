@@ -6,11 +6,13 @@ import SignUp from './components/SignUp.jsx';
 import Dashboard from "./components/Dashboard.jsx";
 import FindNearby from "./components/FindNearby.jsx";
 
+
+
 const rootElement = document.getElementById('root')
 ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
     <ChakraProvider>
-      <Dashboard />
+      <App />
     </ChakraProvider>
   </React.StrictMode>,
 )
